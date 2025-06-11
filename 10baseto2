@@ -1,0 +1,10 @@
+x=int(input("Enter a number: "))
+two_base=[]
+
+while x>0:
+    remain=x%2
+    two_base.append(remain)
+    x=x//2 #// bize sayıyı 2 ye bölüp tam sayı kısmını almamızı sağlıyor
+two_base.reverse()#var olan bir listeyi ters çevirmek için kullanılır
+
+print(f"basetotwo={two_base}")
